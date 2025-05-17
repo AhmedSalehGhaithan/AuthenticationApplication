@@ -1,42 +1,39 @@
-# ASP.NET Core JWT Authentication & User Management API
+# ASP.NET JWT Authentication with User Management
 
-[![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-6.0-purple)](https://dotnet.microsoft.com/)
-[![JWT](https://img.shields.io/badge/JWT-Authentication-orange)](https://jwt.io/)
+![Project Screenshot](screenshot.png)
 
-A secure ASP.NET Core Web API for user authentication and management using JSON Web Tokens (JWT), with role-based authorization and refresh token support.
+A complete authentication system built with ASP.NET Core MVC featuring JWT authentication, user registration, login, and management.
 
----
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
 
-## 📌 Features
-- **JWT Authentication**: Secure login/register with access and refresh tokens.
-- **Role-Based Access Control**: Roles include `Admin`, `Teacher`, and `Student`.
-- **User Management**:
-  - Admin can create/delete users and assign roles.
-  - Profile management for all users.
-- **Refresh Tokens**: Auto-renew expired access tokens.
-- **Swagger API Documentation**: Interactive API testing UI.
-- **Entity Framework Core**: SQL Server database integration.
+## Features
 
----
+### Authentication
+- User registration with email validation
+- JWT-based login/logout
+- Password reset functionality
+- Email verification
+- Role-based authorization
 
-## 🛠 Technologies
-- **Backend**: ASP.NET Core 6
-- **Authentication**: JWT Bearer Tokens
-- **ORM**: Entity Framework Core
-- **Database**: SQL Server (configurable to PostgreSQL/MySQL)
-- **Tools**: Swagger (OpenAPI), Postman
+### User Management
+- Admin dashboard for user management
+- CRUD operations for users
+- Role assignment
+- Account activation/deactivation
 
----
+### Security
+- JWT access and refresh tokens
+- Password hashing with salt
+- Secure cookie settings
+- Rate limiting for authentication endpoints
 
-## 🚀 Getting Started
+## Installation
 
 ### Prerequisites
-- [.NET 6 SDK](https://dotnet.microsoft.com/download)
-- [SQL Server](https://www.microsoft.com/sql-server) or another database provider
-- IDE (e.g., Visual Studio, VS Code)
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/aspnet-jwt-auth.git
-   cd aspnet-jwt-auth
+- .NET 9.0 SDK or later
+- SQL Server
+- SMTP server credentials (for email functionality)
